@@ -27,7 +27,7 @@ namespace GlimpseApp
             // FlowLayoutPanel con scroll vertical dentro del contenedor
             FlowLayoutPanel panelScroll = new FlowLayoutPanel()
             {
-                Size = new Size(600, this.Height -40), // Tamaño del panel de scroll
+                Size = new Size(600, this.Height -100), // Tamaño del panel de scroll
                 AutoScroll = true,
                 WrapContents = true,
                 FlowDirection = FlowDirection.LeftToRight,
@@ -37,6 +37,16 @@ namespace GlimpseApp
                 BorderStyle = BorderStyle.None,
             };
             this.Controls.Add(panelScroll);
+
+            Panel lineaScroll = new Panel()
+            {
+                BackColor = Color.FromArgb(216,191,216),// Rosado claro bonito
+                Width = 5, // Grosor medio
+                Height = panelScroll.Height -300,
+                Location = new Point(panelScroll.Right + 80, panelScroll.Top + 190) // 3 cm ≈ 30px a la derecha
+            };
+            this.Controls.Add(lineaScroll);
+            lineaScroll.BringToFront();
 
             // Cargar imágenes desde carpeta "imagenes"
             string rutaImagenes = Path.Combine(Application.StartupPath, @"..\..\imagenes");
