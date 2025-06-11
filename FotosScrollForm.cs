@@ -17,8 +17,8 @@ namespace GlimpseApp
             // Panel contenedor (como un marco para el scroll de imágenes)
             Panel contenedor = new Panel()
             {
-                Size = new Size(525, 650), // Solo ocupa parte del formulario
-                Location = new Point(130, 100), // Posición: puedes ajustarla
+                Size = new Size(525, 580), // Solo ocupa parte del formulario
+                Location = new Point(130, 150), // Posición: puedes ajustarla
                 BackColor = Color.White,
                 Padding = new Padding(0),
                 Margin = new Padding(0)
@@ -43,7 +43,7 @@ namespace GlimpseApp
                 BackColor = Color.FromArgb(216,191,216),// Rosado claro bonito
                 Width = 5, // Grosor medio
                 Height = panelScroll.Height -300,
-                Location = new Point(panelScroll.Right + 80, panelScroll.Top + 190) // 3 cm ≈ 30px a la derecha
+                Location = new Point(panelScroll.Right + 80, panelScroll.Top + 250) // 3 cm ≈ 30px a la derecha
             };
             this.Controls.Add(lineaScroll);
             lineaScroll.BringToFront();
