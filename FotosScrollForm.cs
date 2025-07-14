@@ -24,7 +24,7 @@ namespace GlimpseApp
             PictureBox imgSuperiorIzquierda = new PictureBox();
             imgSuperiorIzquierda.Image = Image.FromFile("Recomendaciones.jpg"); // Cambia el nombre
             imgSuperiorIzquierda.SizeMode = PictureBoxSizeMode.StretchImage;
-            imgSuperiorIzquierda.Size = new Size(263, 37); // Ajusta tamaño como desees
+            imgSuperiorIzquierda.Size = new Size(295, 37); // Ajusta tamaño como desees
             imgSuperiorIzquierda.Location = new Point(90, 100);
             imgSuperiorIzquierda.BackColor = Color.Transparent;
             this.Controls.Add(imgSuperiorIzquierda);
@@ -203,9 +203,45 @@ namespace GlimpseApp
                 //Diccionario de lo que dice cada foto
                 Dictionary<string, string> textosPorImagen = new Dictionary<string, string>()
                 {
-                    { "img1", "Explora el mundo\nConéctate con la vida\n#viajes" },
-                       { "img2", "Recomendación del día\nNo olvides compartir\n#glimpse" },
-                        { "img3", "Un momento mágico\nCapturado solo para ti\n#memorias" },
+                    { "img1", "Suetercito rosa sobre una camisa blaca. Vibes de 2021 - Adriana" },
+                    { "img2", "Combinación de colores calidos - Kendra" },
+                    { "img3", "Blanco y rosa, op top.- Alejandra" },
+                    { "img4", "Combinación de texturas para invierno - Lourdes" },
+                    { "img5", "Conjunto rosita para un trip - Fátima" },
+                    { "img6", "Para la fiesta con las girls - Adriana" },
+                    { "img7", "Eleva tu outfit con muchos accesorios - Kendra" },
+                    { "img8", "Un bolso cruzado nunca está de más - Alejandra" },
+                    { "img9", "Tendencia de las camisas de Brasil - Lourdes" },
+                    { "img10", "Una paleta de color para todo el outfit, top - Fátima" },
+                    { "img11", "Tacones + jeans = top - Adriana" },
+                    { "img12", "Para una date con las girls - Kendra" },
+                    { "img13", "Una paleta de color para todo el outfit, top - Alejandra" },
+                    { "img14", "Una gorra siempre es un accesorio perfecto - Lourdes" },
+                    { "img15", "Accesorio en el pelo = tendencia - Fátima" },
+                    { "img16", "Eleva tus outfits con unos lentes - Adriana" },
+                    { "img17", "Todo de blanco para marcar tendencia - Kendra" },
+                    { "img18", "Un escote para mostrar los hombros es cute - Alejandra" },
+                    { "img19", "Un escote para mostrar los hombros es cute - Lourdes" },
+                    { "img20", "Vibes de The Vampire Diaries - Fátima" },
+                    { "img21", "Outfit para otoño - Adriana" },
+                    { "img22", "Un moño siempre eleva las vibes - Kendra" },
+                    { "img23", "Vibes de Francia en cualquier lado del mundo - Alejandra" },
+                    { "img24", "Sueter a los hombros = top - Lourdes" },
+                    { "img25", "Los converses nunca pasarán de moda - Fátima" },
+                    { "img26", "Casual, pero siempre con una bolsa cute - Adriana" },
+                    { "img27", "Casual, pero siempre con una bolsa cute - Kendra" },
+                    { "img28", "Un color distinto siempre es buena opción - Alejandra" },
+                    { "img29", "Chaqueta + lentes = on top - Lourdes" },
+                    { "img30", "Los estampados siempre son buena opción - Fátima" },
+                    { "img31", "Una faldita para vernos cute - Adriana" },
+                    { "img32", "Mocasines + calcetas = tendencia - Kendra" },
+                    { "img33", "Para una date perfecta en verano - Alejandra" },
+                    { "img34", "Las corbatas son un accesorio perfecto - Lourdes" },
+                    { "img35", "Algo distinto, pero que vale la pena usar - Fátima" },
+                    { "img36", "La vieja confiable (botas) - Adriana" },
+                    { "img37", "El rojo oscuro siempre estará en tendencia - Alejandra" },
+                    { "img38", "Ni tan formal, ni tan informal - Kendra" },
+                    { "img39", "Una conbinación distinta, pero que vale la pena - Lourdes" }
                 };
                 foreach (string archivo in archivos)
                 {
@@ -258,7 +294,8 @@ namespace GlimpseApp
                     PictureBox pic = new PictureBox()
                     {
                         Image = Image.FromFile(archivo),
-                        Dock = DockStyle.Fill
+                        Dock = DockStyle.Fill,
+                        SizeMode = PictureBoxSizeMode.StretchImage
                     };
 
                     // Overlay
@@ -295,7 +332,7 @@ namespace GlimpseApp
                         Cursor = Cursors.Hand
                     };
                     btnLike.Click += (s, e) => {
-                        MostrarMensajeTemporal("Esta opción está en construcción. Gracias usar Glimpse. ❤️");
+                        MostrarMensajeTemporal("Esta opción está en construcción. Gracias por usar Glimpse. ❤️");
                     };
 
                     // Botón Guardar
@@ -311,7 +348,7 @@ namespace GlimpseApp
 
                     };
                     btnGuardar.Click += (s, e) => {
-                        MostrarMensajeTemporal("Esta opción está en construcción. Gracias usar Glimpse. ❤️");
+                        MostrarMensajeTemporal("Esta opción está en construcción. Gracias por usar Glimpse. ❤️");
                     };
 
                     overlay.Controls.Add(descripcion);
