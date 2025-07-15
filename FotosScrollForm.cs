@@ -117,6 +117,14 @@ namespace GlimpseApp
             img12.BackColor = Color.Transparent;
             this.Controls.Add(img12);
 
+            img12.Cursor = Cursors.Hand;
+            img12.Click += (s, e) =>
+            {
+                FormMeGusta formMeGusta = new FormMeGusta();
+                formMeGusta.Show(); // Usa ShowDialog() si quieres que sea modal
+            };
+
+
             PictureBox img13 = new PictureBox();
             img13.Image = Image.FromFile("Guardados.jpg");
             img13.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -124,6 +132,14 @@ namespace GlimpseApp
             img13.Location = new Point(756, 610);
             img13.BackColor = Color.Transparent;
             this.Controls.Add(img13);
+
+            img13.Cursor = Cursors.Hand;
+            img13.Click += (s, e) =>
+            {
+                FormGuardados formGuardados = new FormGuardados();
+                formGuardados.Show();
+            };
+
 
             PictureBox img14 = new PictureBox();
             img14.Image = Image.FromFile("Perfil.jpg");
