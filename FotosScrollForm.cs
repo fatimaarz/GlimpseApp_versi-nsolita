@@ -22,10 +22,10 @@ namespace GlimpseApp
 
             // Imagenes
             PictureBox imgSuperiorIzquierda = new PictureBox();
-            imgSuperiorIzquierda.Image = Image.FromFile("Recomendaciones.jpg"); // Cambia el nombre
+            imgSuperiorIzquierda.Image = Image.FromFile("Fotos.jpg"); // Cambia el nombre
             imgSuperiorIzquierda.SizeMode = PictureBoxSizeMode.StretchImage;
-            imgSuperiorIzquierda.Size = new Size(295, 37); // Ajusta tamaño como desees
-            imgSuperiorIzquierda.Location = new Point(90, 100);
+            imgSuperiorIzquierda.Size = new Size(100, 25); // Ajusta tamaño como desees
+            imgSuperiorIzquierda.Location = new Point(90, 116);
             imgSuperiorIzquierda.BackColor = Color.Transparent;
             this.Controls.Add(imgSuperiorIzquierda);
 

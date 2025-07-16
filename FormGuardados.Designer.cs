@@ -29,13 +29,15 @@ namespace GlimpseApp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGuardados));
             this.SuspendLayout();
             // 
             // FormGuardados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 375);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(443, 437);
             this.Name = "FormGuardados";
             this.Text = "FormGuardados";
             this.Load += new System.EventHandler(this.FormGuardados_Load);
