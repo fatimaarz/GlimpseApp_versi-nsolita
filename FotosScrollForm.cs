@@ -81,7 +81,7 @@ namespace GlimpseApp
             img8.Image = Image.FromFile("Calendario.jpg");
             img8.SizeMode = PictureBoxSizeMode.StretchImage;
             img8.Size = new Size(450, 255);
-            img8.Location = new Point(720, 200);
+            img8.Location = new Point(720, 189);
             img8.BackColor = Color.Transparent;
             this.Controls.Add(img8);
 
